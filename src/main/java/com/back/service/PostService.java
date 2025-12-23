@@ -17,9 +17,9 @@ public class PostService {
         return postRepository.count();
     }
 
-    public Post write(Member member, String title, String content) {
-        Post post = new Post(member, title, content);
-
+    public Post write(Member author, String title, String content) {
+        Post post = new Post(author, title, content);
+        author.increaseActivityScore(3);
         return postRepository.save(post);
     }
 
