@@ -1,4 +1,4 @@
-package com.back.boundedContext.post.rsData;
+package com.back.global.rsData;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

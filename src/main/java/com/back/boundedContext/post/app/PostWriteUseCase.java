@@ -3,7 +3,7 @@ package com.back.boundedContext.post.app;
 import com.back.boundedContext.member.domain.Member;
 import com.back.boundedContext.post.domain.Post;
 import com.back.boundedContext.post.out.PostRepository;
-import com.back.boundedContext.post.rsData.RsData;
+import com.back.global.rsData.RsData;
 import com.back.global.eventPublisher.EventPublisher;
 import com.back.shared.post.dto.PostDto;
 import com.back.shared.post.event.PostCreatedEvent;
