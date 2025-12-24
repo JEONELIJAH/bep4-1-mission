@@ -54,6 +54,8 @@ public class DataInit {
     public void makeBasePosts() {
         if (postFacade.count() > 0) return;
 
+        log.info("초기 글 생성 시작");
+
         Member user1Member = memberFacade.findByUsername("user1").get();
         Member user2Member = memberFacade.findByUsername("user2").get();
         Member user3Member = memberFacade.findByUsername("user3").get();
