@@ -14,4 +14,6 @@ public class GlobalConfig {
     public void setEventPublisher(EventPublisher eventPublisher) {
         GlobalConfig.eventPublisher = eventPublisher;
     }
+
+    public static String INTERVAL_CALL_BACK_URL;
 }
