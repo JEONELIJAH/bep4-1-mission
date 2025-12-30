@@ -10,7 +10,7 @@ public class MemberApiClient {
 
     public MemberApiClient(@Value("${custom.global.internalBackUrl}") String internalBackUrl) {
         this.restClient = RestClient.builder()
-                .baseUrl(internalBackUrl + "/api/v1/member")
+                .baseUrl(internalBackUrl + "/member/api/v1")
                 .build();
     }
 
