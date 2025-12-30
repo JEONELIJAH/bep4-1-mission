@@ -2,6 +2,8 @@ package com.back.boundedContext.payout.domain;
 
 import com.back.global.jpa.entity.BaseIdAndTime;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -10,6 +12,8 @@ import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
 @Table(name = "PAYOUT_PAYOUT_CANDIDATE_ITEM")
+@Getter
+@NoArgsConstructor
 public class PayoutCandidateItem extends BaseIdAndTime {
     @Enumerated(EnumType.STRING)
     private PayoutEventType eventType;
